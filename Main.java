@@ -41,7 +41,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter employee type (full-time / part-time): ");
         String type = input.nextLine();
-        if(type.equals("full-time"))
+        if(type.equalsIgnoreCase("full-time"))
         {
             FullTimeEmployee employee = new FullTimeEmployee();
             System.out.print("Enter base pay: ");
@@ -52,7 +52,7 @@ public class Main {
             System.out.println("Monthly Salary: $" + income);
 
         }
-        else if(type.equals("part-time"))
+        else if(type.equalsIgnoreCase("part-time"))
         {
             PartTimeEmployee employee = new PartTimeEmployee();
             System.out.print("Enter hourly rate: ");
